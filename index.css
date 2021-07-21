@@ -72,3 +72,12 @@ body {
 .slick-next:before {
   color: black;
 }
+
+@media only screen and (min-width: 600px) {
+  .slick-prev {
+    top: 41.5%;
+  }
+  .slick-next {
+    top: 41.5%;
+  }
+}
