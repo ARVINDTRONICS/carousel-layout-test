@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Sample</title>
+
+    <!--slickcss-->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.css"
+    />
+    <!--bootstrap-->
+     <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css"
+    />
+    <!--jquery-->
+    <script
+      type="text/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.js"
+    ></script>
+  </head>
+
+  <link rel="stylesheet" type="text/css" href="./index.css" />
+
+  <body>
+    <main>
+    
+      <div class="wheels-header">
+                        <h2>Wheels</h2>
+      </div>
+      <div class="wheels-description">
+        <p>
+          Lorem IpsumLorem IpsumLorem IpsumLorem IpsumLorem IpsumLorem
+          IpsumLorem IpsumLorem IpsumLorem Ipsum Lorem IpsumLorem IpsumLorem
+          IpsumLorem IpsumLorem IpsumLorem IpsumLorem IpsumLorem IpsumLorem
+          Ipsum
+        </p>
+      </div>
+     <div class="carousel-wrap">
+   
+        <div class="multiple-item">
+          <div class="each-item">
+            <img src="./assets/wheel1.jpeg" alt="wheels"></img>
+            <div>17-Inch CAST ALUMINIUM,FULLY PAINTED SILVER LITHO</div>
+            <div>Standard on touring FWD</div>
+          </div>
+          <div class="each-item">
+            <img src="./assets/wheel2.jpeg" alt="wheels"></img>
+            <div>17-Inch CAST ALUMINIUM,FULLY PAINTED SILVER LITHO</div>
+            <div>Standard on touring FWD</div>
+          </div>
+          <div class="each-item">
+            <img src="./assets/wheel3.jpeg" alt="wheels"></img>
+            <div>17-Inch CAST ALUMINIUM,FULLY PAINTED SILVER LITHO</div>
+            <div>Standard on touring FWD</div>
+          </div>
+          <div class="each-item">
+            <img src="./assets/wheel4.jpeg" alt="wheels"></img>
+            <div>17-Inch CAST ALUMINIUM,FULLY PAINTED SILVER LITHO</div>
+            <div>Standard on touring FWD</div>
+          </div>
+        </div>   
+        
+        <div class="carousel-backdrop"></div>
+      </div>
+        
+    </main>
+    <script type="text/javascript">
+      //Multiple item
+
+      $('.multiple-item').slick({
+  dots: true,
+  infinite: true,
+  speed: 300,
+  slidesToShow: 3,
+  slidesToScroll: 1,
+  responsive: [
+    {
+      breakpoint: 1024,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        infinite: true,
+        dots: true
+      }
+    },
+    {
+      breakpoint: 600,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1
+      }
+    },
+    {
+      breakpoint: 480,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1
+      }
+    }
+    // You can unslick at a given breakpoint now by adding:
+    // settings: "unslick"
+    // instead of a settings object
+  ]
+});
+	
+   
+    </script>
+  </body>
+</html>

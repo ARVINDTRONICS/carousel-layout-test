@@ -1,0 +1,62 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  font-family: "Lucida Console", "Courier New", monospace;
+}
+
+.wheels-header {
+  border-left: 10px solid black;
+  text-transform: uppercase;
+  display: flex;
+  height: 10vh;
+  align-items: center;
+}
+.wheels-header h2 {
+  margin-left: 1rem;
+}
+.wheels-description {
+  width: 70%;
+  padding: 2rem;
+  height: 20vh;
+  line-height: 2.5rem;
+}
+.multiple-item {
+  width: 80%;
+  height: 50vh;
+  margin: 0 auto;
+}
+.multiple-item img {
+  margin: 0 auto;
+  height: 50vh;
+}
+
+.each-item div {
+  margin: 0 auto;
+  padding: 1rem;
+  height: 100%;
+  text-align: center;
+}
+.carousel-wrap {
+  height: 70vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.carousel-backdrop {
+  position: absolute;
+  z-index: -1;
+  top: 46.5%;
+  height: 50vh;
+  width: 100%;
+  background-color: #e6d6c5;
+}
+.slick-prev:before,
+.slick-next:before {
+  color: black;
+}
