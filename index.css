@@ -33,6 +33,7 @@ body {
 .multiple-item img {
   margin: 0 auto;
   height: 50vh;
+  background-size:cover
 }
 
 .each-item div {
